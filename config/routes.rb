@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
 
   resources :post_images,only: [:new, :index, :show, :create, :destroy]
-  resources :users, only: [:show,:edit]
+  resources :users, only: [:show,:edit, :update]
 
 
   get 'homes/about' => "homes#about", as: :about
